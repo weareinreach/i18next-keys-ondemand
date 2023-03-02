@@ -1,9 +1,10 @@
 {
 	"name": "@weareinreach/i18next-keys-ondemand",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"description": "i18next plugin to request the non-translated keys when used",
 	"main": "dist/index.js",
 	"typings": "dist/index.d.ts",
+	"type": "module",
 	"repository": "https://github.com/weareinreach/i18next-keys-ondemand.git",
 	"author": "Nabil Koroghli",
 	"license": "MIT",
@@ -36,7 +37,7 @@
 		"debounce": "^1.2.1"
 	},
 	"peerDependencies": {
-		"i18next": "10.x.x"
+		"i18next": "22.x.x"
 	},
 	"jest": {
 		"moduleFileExtensions": [
