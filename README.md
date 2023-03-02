@@ -31,7 +31,12 @@ import { I18nextKeysOnDemand, TranslationMap } from 'i18next-keys-ondemand'
 
 
 
-const getterFunction = async (keys: string[], language: string, namespace: string, defaultValues: Record<string,string>) => {
+const getterFunction = async (
+        keys: string[], 
+        language: string, 
+        namespace: string, 
+        defaultValues: Record<string,string>
+    ) => {
 
     /** This function should ultimately return an object in the format of:
      *
@@ -40,11 +45,11 @@ const getterFunction = async (keys: string[], language: string, namespace: strin
      */
 
     const result: Record<string,string> = await someFunctionThatHandlesThings(
-          keys,
-          language,
-          namespace,
-          defaultValues // pass defaultValues if you want to save new strings to your i18n store
-          )
+        keys,
+        language,
+        namespace,
+        defaultValues // pass defaultValues if you want to save new strings to your i18n store
+        )
 
   return result
 }
