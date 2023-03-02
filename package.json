@@ -4,7 +4,7 @@
 	"description": "i18next plugin to request the non-translated keys when used",
 	"main": "dist/index.js",
 	"typings": "dist/index.d.ts",
-	"repository": "https://github.com/kingatlas/i18next-keys-ondemand.git",
+	"repository": "https://github.com/weareinreach/i18next-keys-ondemand.git",
 	"author": "Nabil Koroghli",
 	"license": "MIT",
 	"scripts": {
