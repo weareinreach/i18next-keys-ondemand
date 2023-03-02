@@ -16,7 +16,7 @@ $ yarn add i18next-keys-ondemand
 
 ```
 
-# Who to use it?
+# How to use it?
 
 - Use the module when initializing i18next:
 
