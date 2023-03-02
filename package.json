@@ -1,22 +1,40 @@
 {
 	"name": "@weareinreach/i18next-keys-ondemand",
-	"version": "0.3.0",
-	"description": "i18next plugin to request the non-translated keys when used",
+	"version": "0.3.1",
+	"description": "i18next plugin to request missing translation keys when used",
 	"main": "dist/index.js",
 	"typings": "dist/index.d.ts",
 	"type": "module",
+	"private": false,
+	"keywords": [
+		"i18next",
+		"i18n",
+		"i18next-plugin",
+		"translation",
+		"languages",
+		"i18next-backend"
+	],
 	"repository": "https://github.com/weareinreach/i18next-keys-ondemand.git",
-	"author": "Nabil Koroghli",
+	"author": "Joe Karow",
 	"license": "MIT",
 	"contributors": [
 		{
-			"name": "Joe Karow",
-			"url": "https://joekarow.dev"
+			"name": "Nabil Koroghli",
+			"url": "https://github.com/kingatlas/i18next-keys-ondemand"
+		}
+	],
+	"funding": [
+		{
+			"type": "Donate to InReach",
+			"url": "https://inreach.kindful.com/staff-2023/team-joe-karow"
+		},
+		{
+			"type": "github",
+			"url": "https://github.com/sponsors/weareinreach"
 		}
 	],
 	"scripts": {
 		"prepublish": "pnpm build",
-		"test": "jest",
 		"build": "tsc"
 	},
 	"files": [
@@ -31,5 +49,12 @@
 	},
 	"peerDependencies": {
 		"i18next": "22.x.x"
-	}
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"engines": {
+		"node": ">=16"
+	},
+	"packageManager": "pnpm@7.28.0"
 }
