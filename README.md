@@ -1,6 +1,6 @@
 [![npm version](https://badge.fury.io/js/i18next-keys-ondemand.svg)](https://www.npmjs.com/package/i18next-keys-ondemand)
 
-# I18next with ability to download missing keys 
+# I18next with ability to download missing keys
 
 Existing [i18next](https://github.com/i18next/i18next) offers backend plugins like [i18next-xhr-backend](https://github.com/i18next/i18next-xhr-backend), but those plugins are requesting keys by namespaces and not at the granularity of an individual key.
 The goal of this module is to be able to fetch missing keys individually, taking in consideration performances by debouncing the requests in a individual request.
@@ -26,7 +26,7 @@ import { I18nextKeysOnDemand, TranslationMap } from 'i18next-keys-ondemand';
 
 
 
-function translationService(keys: string[]) {
+function translationService(keys: string[], language: string, namespace: string, defaultValues: Record<string,string>) {
     // simulate AJAX call
     return new Promise<TranslationMap>((resolve) => {
         const result: TranslationMap = {};
@@ -54,4 +54,3 @@ i18n
 | `translationGetter` | yes |  | Translation service to use |
 | `missingKeyValue` | no | '' | Value to return for missing keys |
 | `debounceDelay` | no | 100 | Delay in ms used to debounce the translation requests |
-

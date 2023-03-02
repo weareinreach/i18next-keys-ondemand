@@ -1,14 +1,26 @@
 import { i18n } from 'i18next'
-import * as debounce from 'debounce'
+import debounce from 'just-debounce'
 
 export interface TranslationMap {
 	[key: string]: string
 }
 
 export type TranslationGetter = (
+	/** Array of keys passed to `t()` */
 	keys: string[],
+	/** Language/locale code */
 	language: string,
+	/** Translation namespace */
 	namespace: string,
+	/** Values passed to the `defaultValue` option of `t('some-key', {defaultValue: 'Default value for string'})
+	 *
+	 *
+	 * Object would be:
+	 *
+	 * ```ts
+	 * {'some-key': 'Default value for string'}
+	 * ```
+	 */
 	defaultValues: Record<string, string>
 ) => Promise<TranslationMap>
 
@@ -81,7 +93,7 @@ export class I18nextKeysOnDemand {
 
 			debouncedRequestResources[path] =
 				debouncedRequestResources[path] ||
-				debounce(() => requestResources(lng, ns), options.debounceDelay)
+				debounce(() => requestResources(lng, ns), options.debounceDelay ?? 100)
 			debouncedRequestResources[path]()
 		}
 
