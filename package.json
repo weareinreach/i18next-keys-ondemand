@@ -1,6 +1,6 @@
 {
 	"name": "@weareinreach/i18next-keys-ondemand",
-	"version": "0.3.1",
+	"version": "0.3.2",
 	"description": "i18next plugin to request missing translation keys when used",
 	"main": "dist/index.js",
 	"typings": "dist/index.d.ts",
@@ -35,7 +35,7 @@
 	],
 	"scripts": {
 		"prepublish": "pnpm build",
-		"build": "tsc"
+		"build": "rm ./dist/* && tsc"
 	},
 	"files": [
 		"dist"
