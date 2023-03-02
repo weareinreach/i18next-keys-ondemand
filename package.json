@@ -1,6 +1,6 @@
 {
 	"name": "@weareinreach/i18next-keys-ondemand",
-	"version": "0.2.1",
+	"version": "0.2.2",
 	"description": "i18next plugin to request the non-translated keys when used",
 	"main": "dist/index.js",
 	"typings": "dist/index.d.ts",
@@ -11,7 +11,7 @@
 	"scripts": {
 		"prepublish": "pnpm build",
 		"test": "jest",
-		"build": "tsc"
+		"build": "ncc build ./src/index.ts -o ./dist --target es2020"
 	},
 	"files": [
 		"dist"
@@ -21,6 +21,7 @@
 		"@types/gulp": "^4.0.10",
 		"@types/jest": "^29.4.0",
 		"@types/merge2": "^1.4.0",
+		"@vercel/ncc": "^0.36.1",
 		"gulp": "^4.0.2",
 		"gulp-clean": "^0.4.0",
 		"gulp-tslint": "^8.1.4",

@@ -5,6 +5,7 @@ specifiers:
   '@types/gulp': ^4.0.10
   '@types/jest': ^29.4.0
   '@types/merge2': ^1.4.0
+  '@vercel/ncc': ^0.36.1
   debounce: ^1.2.1
   gulp: ^4.0.2
   gulp-clean: ^0.4.0
@@ -26,6 +27,7 @@ devDependencies:
   '@types/gulp': 4.0.10
   '@types/jest': 29.4.0
   '@types/merge2': 1.4.0
+  '@vercel/ncc': 0.36.1
   gulp: 4.0.2
   gulp-clean: 0.4.0
   gulp-tslint: 8.1.4_tslint@6.1.3
@@ -828,6 +830,11 @@ packages:
     resolution: {integrity: sha512-pet5WJ9U8yPVRhkwuEIp5ktAeAqRZOq4UdAyWLWzxbtpyXnzbtLdKiXAjJzi/KLmPGS9wk86lUFWZFN6sISo4g==}
     dependencies:
       '@types/yargs-parser': 21.0.0
+    dev: true
+
+  /@vercel/ncc/0.36.1:
+    resolution: {integrity: sha512-S4cL7Taa9yb5qbv+6wLgiKVZ03Qfkc4jGRuiUQMQ8HGBD5pcNRnHeYM33zBvJE4/zJGjJJ8GScB+WmTsn9mORw==}
+    hasBin: true
     dev: true
 
   /ansi-colors/1.1.0:
