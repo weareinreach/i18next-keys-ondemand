@@ -41,7 +41,7 @@
 		"dist"
 	],
 	"devDependencies": {
-		"i18next": "^22.4.10",
+		"i18next": "^22.5.1",
 		"typescript": "^4.9.5"
 	},
 	"dependencies": {
@@ -56,5 +56,5 @@
 	"engines": {
 		"node": ">=16"
 	},
-	"packageManager": "pnpm@7.28.0"
+	"packageManager": "pnpm@7.33.7"
 }
