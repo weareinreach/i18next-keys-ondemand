@@ -41,20 +41,20 @@
 		"dist"
 	],
 	"devDependencies": {
-		"i18next": "^22.4.10",
-		"typescript": "^4.9.5"
+		"i18next": "22.4.10",
+		"typescript": "4.9.5"
 	},
 	"dependencies": {
-		"just-debounce": "^1.1.0"
+		"just-debounce": "1.1.0"
 	},
 	"peerDependencies": {
-		"i18next": "22.x.x"
+		"i18next": "22.5.1"
 	},
 	"publishConfig": {
 		"access": "public"
 	},
 	"engines": {
-		"node": ">=16"
+		"node": "22.0.0"
 	},
 	"packageManager": "pnpm@7.28.0"
 }
