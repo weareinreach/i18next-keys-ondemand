@@ -41,14 +41,14 @@
 		"dist"
 	],
 	"devDependencies": {
-		"i18next": "^22.4.10",
+		"i18next": "^26.0.0",
 		"typescript": "^4.9.5"
 	},
 	"dependencies": {
 		"just-debounce": "^1.1.0"
 	},
 	"peerDependencies": {
-		"i18next": "22.x.x"
+		"i18next": "26.3.4"
 	},
 	"publishConfig": {
 		"access": "public"
